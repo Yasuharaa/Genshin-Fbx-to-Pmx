@@ -1,0 +1,157 @@
+#Fbx_to_Pmx
+Step 1 - Clear Scale, Clear Pose, Apply Material
+	 alt+s, 
+	 pose>ClearTransform>All,
+	 armture_rotation_x=90,
+	 export fbx.
+Step 2 - export to fbx again
+Step 3 - Open Noesis, expor fbx to pmx
+Step 4 - Open PMXEditor, fix mat, fix bone link, rename bone, rename morph
+Step 5 - make rig body, physics, join and link
+Step 6 - Apply Manashiku shader
+Step 7 - Config Manashiku Shader
+Step 8 - Done
+
+#Arm fix
+1. clave 8
+2. Upperarm 8
+#Fingers fix 
+1. x -20
+2. x -20
+3. x 0
+4. x 20
+5. x 30
+
+#Scale
+Loli 1.1
+Boy or Girl 1.2
+Lady 1.2
+Male 1.26
+
+#Bone Translation En - Jp
+L, 左
+R, 右
+Up, 上
+Down, 下
+0, ０
+1, １
+2, ２
+3, ３
+Brow_Trouble, 困る
+Brow_Smily, にこり
+Brow_Angry, 真面目
+Brow_Shy, 恥ずかしい
+Brow_Up, 上
+Brow_Down, 下
+Brow_Squeeze, 前
+Mouth_a, あ
+Mouth_i, い
+Mouth_u, う //a 0.2, line2 1.0//
+Mouth_e, え //wa 0.5//
+Mouth_o, お //a 0.5, line2 1.0//
+Mouth_Smile, にやり
+Mouth_Wa, ワ
+Mouth_n, ん
+Mouth_Angry1, い１
+Mouth_Angry2, い２
+Mouth_Fury, あ２
+Mouth_Doya1, にやり２
+Mouth_Doya2, にやり３
+Mouth_Neko, ω
+Mouth_Pero1, てへぺろ
+Mouth_Pero2, ぺろっ
+Mouth_Line1, 口横広げ
+Mouth_Line2, 口横狭め
+Mouth_BigTongue, 舌広げ
+Eye_Close1, 笑い
+Eye_Close2, まばたき
+Eye_Close3, なごみ
+Eye_WinkA, ウィンク
+Eye_WinkB, ウィンク２
+Eye_WinkC, なごみ
+Eye_Ha, びっくり
+Eye_Jito, じと目 
+Eye_Wail, 悲しむ 
+Eye_Hostility, 怒り目
+Eye_Tired, ジト目
+Eye_Up, 眼角上
+Eye_Down, 眼角下
+Eye_Loweyelid, 下眼上
+Eye_Pupil, 瞳小
+Eye_Blank, 恐ろしい子！
+Eye_Highlight, はちゅ目縦潰れ
+Eye_Star, 星目
+Eye_><, はぅ
+Eye_O_O, はちゅ目
+blush, 照れ
+root, 全ての親
+Bip001, センター
+groove, グルーブ
++PelvisTwist CF A01, 下半身
+Bip001 Pelvis, 腰
+Bip001 L Thigh, 左足
+Bip001 L Calf, 左ひざ
+Bip001 L Foot, 左足首
+Bip001 L Toe0, 左つま先
+Bip001 R Thigh, 右足
+Bip001 R Calf, 右ひざ
+Bip001 R Foot, 右足首
+Bip001 R Toe0, 右つま先
+Bip001 Spine, 上半身
+Bip001 Spine1, 上半身3
+Bip001 Spine2, 上半身2
+Bip001 Neck, 首
+Bip001 Head, 頭
+Bip001 Eyes, 両目
+Bip001 L Clavicle, 左肩
+Bip001 L UpperArm, 左腕
+Bip001 L Forearm, 左ひじ
+Bip001 L Hand, 左手首
+DMZ L 01, 左親指０
+DMZ L 02, 左親指１
+DMZ L 03, 左親指２
+Bip001 L Finger0, 左親指０
+Bip001 L Finger01, 左親指１
+Bip001 L Finger02, 左親指２
+Bip001 L Finger1, 左人指１
+Bip001 L Finger11, 左人指２
+Bip001 L Finger12, 左人指３
+Bip001 L Finger2, 左中指１
+Bip001 L Finger21, 左中指２
+Bip001 L Finger22, 左中指３
+Bip001 L Finger3, 左薬指１
+Bip001 L Finger31, 左薬指２
+Bip001 L Finger32, 左薬指３
+Bip001 L Finger4, 左小指１
+Bip001 L Finger41, 左小指２
+Bip001 L Finger42, 左小指３
+Bip001 R Clavicle, 右肩
+Bip001 R UpperArm, 右腕
+Bip001 R Forearm, 右ひじ
+Bip001 R Hand, 右手首
+DMZ R 01, 右親指０
+DMZ R 02, 右親指１
+DMZ R 03, 右親指２
+Bip001 R Finger0, 右親指０
+Bip001 R Finger01, 右親指１
+Bip001 R Finger02, 右親指２
+Bip001 R Finger1, 右人指１
+Bip001 R Finger11, 右人指２
+Bip001 R Finger12, 右人指３
+Bip001 R Finger2, 右中指１
+Bip001 R Finger22, 右中指２
+Bip001 R Finger23, 右中指３
+Bip001 R Finger3, 右薬指１
+Bip001 R Finger31, 右薬指２
+Bip001 R Finger32, 右薬指３
+Bip001 R Finger4, 右小指１
+Bip001 R Finger41, 右小指２
+Bip001 R Finger42, 右小指３
+
+#Physics and Join
+Breast bounching config
+limit RotX -25 ~ 25
+Move Z axis 100
+bounching RotX 100, RotY 80, RotZ 100
+Physics setting breast (mass 1), (Mov 0.999), (Rot 0.9999), (Repel 0), (Friction 0.5)
+Physics setting for hair and skirt (mass 1 ~ 0.1), (Mov 0.5555), (Rot 0.999999), (Repel & Friction 0).

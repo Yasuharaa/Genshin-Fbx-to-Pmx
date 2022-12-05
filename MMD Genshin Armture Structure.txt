@@ -1,0 +1,47 @@
+STEP 1 - BLENDER
+#Import Genshin FBX in Blender using Better Fbx addons
+#Alt+s (Clear transform and scale)
+#Pose mode - clear pose (all)
+#For material whos had 2nd UV (Duplicate the mesh, and delete UV0 in duplicated mesh
+#Saparate eyes part and make new "eyes material"
+#Export to fbx (normal fbx)
+
+STEP 2 - NOESSIS
+Load exported fbx in Noessis
+choose pmx format, and png texture. Checklist "No animation" and Export to Pmx
+
+STEP 3 - PMXEDITOR
+Load pmx from noessis with 1/10 scale (Drag pmx file to pmxeditor window) and choice 1/10
+Next steps just watch my tutorial
+
+#Make Root Bone go PMXEditor-Edit-Bone-AddParrent (J)
+#Make Eye controll, create new bone named 両目 and parrent to head bone, 
+then parrent eye bone right and left to 両目 (Eye controll) ration 0.6
+
+"Bip001" is "センター"
+"+PelvisTwist CF A01" is "下半身"
+"Bip001 Pelvis" is "腰"
+"Bip001 Spine" is "上半身"
+"Bip001 Spine1" is "上半身3"
+"Bip001 Spine2" is "上半身2"
+
+Parrent 右足 to 下半身
+Parrent 左足 to 下半身
+Parrent 左足IK親 to root
+Parrent 右足IK親 to root
+
+STEP 4 - BLENDER IMPORT PMX
+#Genshin rest pose to MMD rest pose (Do this after your model are in pmx format)
+Import your pmx in blender
+Scale = 1.26 and adjust the height from the plane
+Bip001 Clavicle + y rotate = 8 and -8 for L
+Bip001 Upperarm + y rotate = 8 and -8 for L
+Finger Thumb + z rotate = 20 and -20 for L
+Finger Index + z rotate = 20 and -20 for L
+Finger midle none
+Finger 4th + z rotate -20 and 20 for L
+Finger little + z rotate -30 and 30 for L
+Leg ik pos + x move = 0.35 and -0.35 for L
+After all select the mesh and apply the armture modifier
+go pose mode and apply to rest pose
+export to pmx
